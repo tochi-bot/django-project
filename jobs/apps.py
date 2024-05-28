@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HellowWorldConfig(AppConfig):
+class JobsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'hellow_world'
+    name = 'jobs'
