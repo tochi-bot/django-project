@@ -16,9 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from jobs import views as index_views
+from jobs import views
 
 urlpatterns = [
-    path('', index_views.index, name='index'),
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('careers/', views.careers, name='careers'),
     path('admin/', admin.site.urls),
 ]
+
